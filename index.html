@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <script src="https://kit.fontawesome.com/13292bbc24.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            height: 1635px;
+        }
+        .container1 {
+            margin-top: -10px;
+            margin-right: -10px;
+            display: flex;
+            background-color: rgb(255 255 255);
+            position: fixed;
+            height: 80px;
+            /* border-bottom: 2px solid black; */
+        }
+
+        .left {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            ;
+            /* background: rgb(250, 246, 246); */
+            color: #8721b1;
+            /* border: 2px solid red; */
+            /* position: fixed; */
+            /* display: inline-block; */
+            font-weight: 750;
+            margin: 15px;
+            margin-bottom: 60px;
+        }
+
+        .mid {
+            /* border: 2px solid black; */
+            /* display: inline-block; */
+            /* absolute is used to shift  */
+            /* position: fixed; */
+            top: 7px;
+            right: 200px;
+            margin-left: 450px;
+            margin-bottom: 60px;
+            /* margin-bottom: 0px; */
+            /* bottom: 0px; */
+        }
+
+        .mid li {
+            float: left;
+            padding: 15px 10px;
+            list-style: none;
+        }
+
+        .mid ul li a {
+            text-decoration: none;
+            color: rgb(69, 63, 63);
+            font-family: sans-serif, 'cursive';
+            font-size: 15px;
+        }
+
+        .mid ul li a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            text-decoration-color: #8721b1;
+            color: rgb(54, 53, 53);
+        }
+
+        .icon1 i {
+            /* border: 2px solid red; */
+            /* position: fixed;
+            display: inline-block;
+            font-size: 35px; */
+            /* width: 50px; */
+            /* height: 50px; */
+            /* display: flex;
+            justify-content: end; */
+            /* margin-right: 150px;
+            margin-top: 0px; */
+            /* margin-top: 20px;
+            margin-right: 5px;
+            color: #8721b1; */
+            /* position: fixed; */
+            font-size: 37px;
+            margin-top: 24px;
+            margin-left: 7px;
+            color: #8721b1;
+        }
+
+        .btn {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        #bttn {
+            margin-left: 18px;
+            margin-top: 24px;
+            border-radius: 10px;
+            padding: 10px 12px;
+            border: 2px solid white;
+            color: aliceblue;
+            background-color: #8721b1;
+            font-weight: bold;
+
+        }
+
+        #bttn1 {
+            margin-left: 6px;
+            margin-right: 26px;
+            margin-top: 24px;
+            border-radius: 10px;
+            padding: 10px 12px;
+            border: 2px solid white;
+            color: aliceblue;
+            background-color: #8721b1;
+            font-weight: bold;
+
+        }
+
+        #bttn:hover {
+            background-color: #692b82;
+            ;
+        }
+
+        #bttn1:hover {
+            background-color: #692b82;
+            ;
+        }
+
+        .container2 {
+            display: flex;
+            background-color: rgb(255 255 255);
+            position: fixed;
+            height: 50px;
+            width: 1550px;
+            top: 75px;
+            margin-left: -10px;
+            border-top: 1px solid rgb(97, 94, 94);
+        }
+
+        .container2 {
+            /* border: 2px solid white; */
+            box-shadow: 0px 4px 5px rgb(185, 179, 179);
+            ;
+        }
+
+        .icon2 i {
+            position: fixed;
+            margin-top: 20px;
+            margin-left: 30px;
+            color: #8721b1;
+        }
+
+        .mid2 {
+            display: inline-block;
+            position: fixed;
+            /* border: 2px solid black; */
+            margin-top: 7px;
+            margin-left: 390px;
+            /* float: right; */
+        }
+
+        .mid2 ul li {
+            font-weight: 500;
+            font-family: sans-serif, 'cursive';
+            float: left;
+            padding-left: 25px;
+            list-style: none;
+            color: #8721b1;
+        }
+
+        .mid2 ul li:hover {
+            text-decoration: underline;
+            text-decoration-color: #8721b1;
+        }
+
+        .icon3 {
+            /* border: 2px solid red; */
+            position: fixed;
+            float: right;
+            margin-left: 1430px;
+            margin-top: 15px;
+            color: #8721b1;
+
+        }
+
+        .container3 {
+            display: flex;
+            /* width: 500px; */
+            /* margin: 250px 20px; */
+        }
+
+        .left3 {
+            margin-top: 200px;
+            margin-left: 30px;
+        }
+
+        .container3 {
+            font-size: 28px;
+        }
+
+        .h22 {
+            font-size: 35px;
+            color: #8721b1;
+            /* margin-top: 200px; */
+        }
+
+        .img {}
+
+        .para {
+            font-family: sans-serif, 'cursive';
+            font-size: 17px;
+            width: 655px;
+            color: rgb(69, 63, 63);
+        }
+
+        .btn1 {
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+
+        #btttn {
+            /* border: 2px solid red; */
+            border-radius: 6px;
+            padding: 11px 9px;
+            margin-right: 10px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        #bttttn {
+            /* border: 2px solid red; */
+            border-radius: 6px;
+            padding: 11px 9px;
+            ;
+            background-color: rgb(209 213 219);
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        #bttttn:hover {
+            background-color: rgb(147, 148, 151);
+        }
+
+        #btttn:hover {
+            background-color: rgb(48, 46, 46);
+        }
+
+        .btn1 a:hover {
+            cursor: pointer;
+
+        }
+
+        .images {
+            display: flex;
+            justify-content: left;
+            width: 40px;
+            height: 350px;
+            margin-left: 105px;
+            margin-top: 128px;
+        }
+
+        .heading {
+            /* border: 2px solid red; */
+            text-align: center;
+            margin-top: 40px;
+            font-family: sans-serif;
+        }
+
+        .container4 {
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .item1 {
+            padding-left: 90px;
+            padding-right: 220px;
+        }
+
+        .item2 {
+            padding-right: 190px;
+        }
+
+        .container4 img:hover {
+            cursor: pointer;
+        }
+
+        #para1 {
+            font-weight: bold;
+        }
+
+        #para2 {
+            font-weight: bold;
+        }
+
+        #para3 {
+            font-weight: bold;
+        }
+
+        #para11{
+            color: rgb(69, 63, 63);
+            font-family: sans-serif, 'cursive';
+        }
+        #para21{
+            color: rgb(69, 63, 63);
+            font-family: sans-serif, 'cursive';
+        }
+        #para31{
+            color: rgb(69, 63, 63);
+            font-family: sans-serif, 'cursive';
+        }
+
+        .btn2 {
+            border: 2px solid;
+            border-radius: 18px;
+            background-color: #8721b1;
+            color: aliceblue;
+            font-weight: bold;
+            padding: 9px 8px;
+            text-decoration: none;
+        }
+        .btn2 a:hover{
+            background-color: #82369f;
+        }
+
+        .btn3 {
+            border: 2px solid;
+            border-radius: 18px;
+            background-color: #8721b1;
+            color: aliceblue;
+            font-weight: bold;
+            padding: 9px 8px;
+            text-decoration: none;
+        }
+
+        .btn4 {
+            border: 2px solid;
+            border-radius: 18px;
+            background-color: #8721b1;
+            color: aliceblue;
+            font-weight: bold;
+            padding: 9px 8px;
+            text-decoration: none;
+        }
+
+        .heading1 {
+            text-align: center;
+            margin-top: 80px;
+            font-family: sans-serif;
+        }
+
+        .container5 {
+            display: flex;
+        }
+
+        .item4 {
+            width: 1530px;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-right: 40px;
+            margin-left: 20px;
+            padding-top: 50px;
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-bottom: 70px;
+            font-size: 18px;
+            background-color: rgb(243 244 246);
+        }
+        .container5 .item4{
+             border: 2px solid white;
+            box-shadow: 10px 10px 5px rgb(185, 179, 179);
+            ;
+        }
+
+        .item5 {
+            width: 1530px;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-right: 25px;
+            padding-top: 50px;
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-bottom: 50px;
+            font-size: 18px;
+            background-color: rgb(243 244 246);
+        }
+        .container5 .item5{
+             border: 2px solid white;
+            box-shadow: 10px 10px 5px rgb(185, 179, 179);
+            ;
+        }
+        .item4 h4{
+            font-family: sans-serif;
+        }
+        .item5 h4{
+            font-family: sans-serif;
+        }
+        .container6{
+            display: flex;
+            margin-top: 112px;
+        }
+        .parrrrrra{
+            position: absolute;
+            left: 200px;
+            top: 1606px;
+        }
+        .hori{
+            position: absolute;
+            left: 180px;
+            top: 1606px;
+        }
+        .parrrrra{
+            border-right: 2px solid rgb(197, 189, 189);
+            padding-right: 13px;
+            padding-top: -20px;
+        }
+    </style>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<body>
+    <div class="navbar">
+        <div class="container1">
+            <div class="left">
+                <h3>CodeWithShivanshu</h3>
+            </div>
+            <div class="mid">
+                <ul>
+                    <li><a href="http://127.0.0.1:5502/index.html" target="_blank">Home</a></li>
+                    <li><a href="https://www.codewithharry.com/videos/" target="_blank">Courses</a></li>
+                    <li><a href="https://www.codewithharry.com/tutorials/" target="_blank">Tutorial</a> </li>
+                    <li><a href="https://www.codewithharry.com/blog/" target="_blank">Blogs</a></li>
+                    <li><a href="https://www.codewithharry.com/notes/" target="_blank">Notes</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="https://www.codewithharry.com/my-gear/" target="_blank">My Gear</a></li>
+                    <li><a href="https://www.codewithharry.com/work/" target="_blank">Work With Us</a></li>
+                </ul>
+            </div>
+            <div class="icon1">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+            <div class="btn">
+                <button id="bttn">Login</button>
+                <button id="bttn1">Signup</button>
+            </div>
+        </div>
+        <hr>
+        <hr>
+        <div class="container2">
+            <div class="icon2">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="mid2">
+                <ul>
+                    <li><a href="#"></a>HTML</li>
+                    <li><a href="#"></a>CSS</li>
+                    <li><a href="#"></a>JS</li>
+                    <li><a href="#"></a>C</li>
+                    <li><a href="#"></a>C++</li>
+                    <li><a href="#"></a>JAVA</li>
+                    <li><a href="#"></a>PYTHON</li>
+                    <li><a href="#"></a>PHP</li>
+                    <li><a href="#"></a>REACT JS</li>
+                </ul>
+            </div>
+            <span class="icon3">
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </span>
+        </div>
+        </div>
+    <div class="container3">
+        <div class="left3">
+            <h2>Welcome to
+                <span class="h22">CodeWithShivanshu</span>
+            </h2>
+            <div class="para">
+                <p>Confused on which course to take? I have got you covered. Browse courses and find out the best course
+                    for
+                    you. Its free! Code With Harry is my attempt to teach basics and those coding techniques to people
+                    in
+                    short time which took me ages to learn.</p>
+            </div>
+            <div class="btn1">
+                <a href="#" id="btttn">Free Courses</a>
+                <a href="#" id="bttttn">Explore Blog</a>
+            </div>
+        </div>
+
+        <div class="images">
+            <img src="image/Front.png" alt="">
+        </div>
+    </div>
+    <h1 class="heading">Recommended Courses</h1>
+
+    <div class="container4">
+        <div class="item1">
+            <img src="image/photo1.png" alt="">
+            <p id="para1">FREE COURSE <br>
+                Python Tutorials - 100 Days of Code</p>
+            <p id="para11">
+                Python is one of the most demanded <br> programming languages in the job market. <br> Surprisingly, it
+                is equally
+                easy to learn and <br>master Python. commit our 100 days of <br> code to python!
+            </p>
+            <a href="#" class="btn2">Start Watching</a>
+        </div>
+        <div class="item2">
+            <img src="image/photo2.png" alt="">
+            <p id="para2">
+                Ultimate <br> JavaScript Course</p>
+            <p id="para21">
+                This latest JavaScript course comes with <br> premium curriculum that covers everything <br>get my
+                handwritten notes for completely <br> free. What are
+                you
+                waiting for? Just Enroll <br> Buddy
+            </p>
+            <a href="#" class="btn3">Start Watching</a>
+        </div>
+        <div class="item3">
+            <img src="image/photo3.jpg" alt="">
+            <p id="para3">FREE COURSE<br>
+                React JS Tutorials For Beginners</p>
+            <p id="para31">
+                React is a free and open-source front-end <br> JavaScript library. series will cover React <br>
+                from starting
+                to the end. We will learn react <br> from the ground up!
+            </p>
+            <a href="#" class="btn4">Start Watching</a>
+        </div>
+    </div>
+    <h1 class="heading1">Testimonials</h1>
+
+    <div class="container5">
+        <div class="item4">
+            <i class="fa-solid fa-quote-right fa-lg" style="color: #7b828e;"></i>
+            <p id="parra">
+                I don't have words to thank this man, I'm really grateful to have this channel and website in my daily
+                routine. If you're a mere beginner, then you can trust this guy and can put your time into his content.
+                I can assure you that it'll be worth it.
+            </p>
+            <h4>Mohit Kumar</h4>
+            <p id="parrra">Web Developer</p>
+        </div>
+        <div class="item5">
+            <i class="fa-solid fa-quote-right fa-lg" style="color: #7b828e;"></i>
+            <p id="parra1">For everyone who wants to level up their #Coding and #Dev skills - seriously, this channel is
+                for you! Both basic and advanced stacks are covered on this channel, and one can learn according to his skill
+                levels. And the icing on the cake is, everything is available for free.</p>
+                <h4>Rakesh Shetty</h4>
+                <p id="parrra1">Web Developer</p>
+        </div>
+    </div>
+    <div class="container6">
+        <div class="parrrrra">
+        <h3>CodeWithShivanshu</h3>
+    </div>
+        <hr class="hori">
+        <div class="parrrrrra">
+        <p>Copyright © 2022 CodeWithHarry.com</p>
+    </div>
+    </div>
+</body>
+
+</html>
